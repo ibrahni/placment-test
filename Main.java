@@ -1,6 +1,9 @@
 //Basics
 class Main {
-
+	public static void main(String[] args){
+		
+	}
+	
 	public static boolean isPalindrome(String string) {
 		char[] sequence = string.toCharArray();
 		int length = sequence.length;
