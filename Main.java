@@ -69,22 +69,26 @@ class Main {
 	}
 
 	// 4-b
-	/* not compelte*/
-//	public static void showTriangle(int max) {
-//		for (int i = 1; i <= max; i++) {
-//			int j = 0;
-//			for (; j <= i / 2; j++) {
-//				System.out.print(j + " ");
-//			}
-//
-//			System.out.print(j + " ");
-//
-//			for (; j > 0; j--) {
-//				System.out.print(j + " ");
-//			}
-//			System.out.println();
-//		}
-//	}
+	public static void triangle(int n)
+	{
+	  int[][] arr = new int[9][9]; 
+
+	  for (int i = 0; i < n; i++)
+	  {
+
+	    for (int j = 0; j <= i; j++)
+	    {
+
+	      if (i == j || j == 0)
+	           arr[i][j] = 1;
+	      else 
+	           arr[i][j] = arr[i-1][j-1] + arr[i-1][j];
+	      System.out.print(arr[i][j]+" ");
+	    }
+	    System.out.println();
+	  }
+	}
+
 
 	// 5-
 	// a- the value of execute(1)
